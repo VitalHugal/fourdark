@@ -14,6 +14,8 @@ body {
     text-align: center;
 }
 
+/* navbar */
+
 .navbar-container {
     background-color: gray;
     display: flex;
@@ -25,7 +27,7 @@ body {
 
 .navbar-logo img,
 .navbar-menu a,
-.navbar-inputs button {
+.navbar-input a {
     display: flex;
     display: inline-block;
 }
@@ -36,66 +38,36 @@ body {
     height: auto;
 }
 
-.navbar-menu a {
+.navbar-menu a,
+.navbar-input a {
     font-size: 18px;
     font-family: var(--font-restante);
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor-zero);
-    padding: 8px;
-    border: 1px solid var(--cor-um);
-    border-radius: 8px;
-}
-
-.navbar-menu a:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.9) 0px 3px 7px -3px;
-}
-
-.navbar-inputs {
-    padding-right: 20px;
-}
-
-.cadastre-se {
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    border: 1px solid white;
     color: black;
-}
-
-.entrar {
-    width: 75px;
-    height: 30px;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-}
-
-.cadastre-se:hover {
-    cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.9) 0px 3px 7px -3px;
-    background-color: white;
-}
-
-.entrar:hover {
-    cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.9) 0px 3px 7px -3px;
-    background-color: black;
-}
-
-.navbar-inputs button {
-    font-weight: 500;
+    padding: 8px;
     border-radius: 8px;
-    font-family: var(--font-restante);
-    text-transform: uppercase;
 }
+
+.navbar-input a{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.navbar-menu a:hover,
+.navbar-input a:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.9) 0px 3px 7px -3px;
+}
+
 
 /* main */
+/* section-one */
 
 .section-one,
 .itens-container-one {
     width: 100%;
-    height: 610px;
+    height: 650px;
     display: flex;
     justify-content: space-around;
 }
@@ -113,3 +85,5 @@ body {
     font-family: var(--font-restante);
     text-transform: uppercase;
 }
+
+/* section-two */
